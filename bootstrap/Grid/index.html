@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bootstrap01</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container-fluid"><!-- 全体を囲むコンテナ -->
+    <h1 style="background:#6D9;">Grid system（コンテナあり）</h1>
+    <div class="row">
+      <div class="col-8" style="background:#FB8;height:200px;">ブロックA</div>
+      <div class="col-4" style="background:#FD9;height:200px;">ブロックB</div>
+    </div>
+    <div class="row">
+      <div class="col-3" style="background:#79F;height:200px;">ブロックC</div>
+      <div class="col-3" style="background:#9BF;height:200px;">ブロックD</div>
+      <div class="col-6" style="background:#79F;height:200px;">ブロックE</div>
+    </div>
+  </div><!-- 全体を囲むコンテナ -->
+  <br>
+  <br>
+
+  <!-- <h1 style="background:#6D9;">コンテナなしの場合</h1> -->
+
+  <div class="container-fluid">
+    <h1 style="background:#6D9;">コンテナありの場合</h1>
+  </div>
+
+  <h1>Grid system（強制改行）</h1>
+  <div class="row row-auto">
+    <!-- row-cols-auto 中身は[flex:0 0 auto][width:auto]のCSS-->
+    <div class="col" style="background:#FB8;height:200px;">ブロック1</div>
+    <div class="col" style="background:#FD9;height:200px;">ブロック2</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロック3</div>
+    <div class="col" style="background:#FD9;height:200px;">ブロック4</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロック5</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロック6</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロック7</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロック8</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロック9</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロック10</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロック11</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロック12</div>
+    <!-- <div class="col" style="background:rgb(239, 106, 4);height:200px;">ブロック13</div> -->
+  </div>
+
+  <h1>Grid system（強制改行）</h1>
+  <div class="row row-cols-5">
+    <!-- row-cols-N N等分は1～6までを分割 N分割したら改行-->
+    <div class="col" style="background:#FB8;height:200px;">ブロックA</div>
+    <div class="col" style="background:#FD9;height:200px;">ブロックB</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロックC</div>
+    <div class="col" style="background:#FD9;height:200px;">ブロックD</div>
+    <div class="col-6" style="background:#FB8;height:200px;">ブロックE</div>
+  </div>
+
+
+  <h1>Grid system（強制改行）</h1>
+  <div class="row">
+    <div class="col-8" style="background:#FB8;height:200px;">ブロックA</div>
+    <div class="w-100"></div><!--W‐100のクラスは要素を100％(width:100%)に指定するクラスで強制改行される8列入って4列空白-->
+    <div class="col-3" style="background:#FD9;height:200px;">ブロックB</div>
+    <div class="col-3" style="background:#FB8;height:200px;">ブロックC</div>
+    <div class="col-2" style="background:#FD9;height:200px;">ブロックD</div><!--4列空白-->
+  </div>
+
+
+  <h1>Grid system（列数の超過）</h1>
+  <div class="row">
+    <div class="col-8" style="background:#FB8;height:200px;">ブロックA</div>
+    <div class="col-3" style="background:#FD9;height:200px;">ブロックB</div><!--8+3で超過、1列残して次に送られる-->
+    <div class="col-3" style="background:#FB8;height:200px;">ブロックC</div>
+    <div class="col-2" style="background:#FD9;height:200px;">ブロックD</div><!--3＋2で7余り空白になる-->
+  </div>
+
+  <div class="row">
+    <div class="col-5" style="background:#FB8;height:200px;">ブロックA</div>
+    <div class="col-3" style="background:#FD9;height:200px;">ブロックB</div>
+  </div>
+
+  <div class="row">
+    <div class="col-5" style="background: rgb(144, 136, 255);height:200px;">ブロックA</div>
+    <div class="col-3" style="background: rgb(255, 153, 153);height:200px;">ブロックB</div><!--自分で書いたもの-->  
+  </div> 
+
+
+
+  <h1>Grid system（等幅に分割）</h1>
+<div class="row">
+  <div class="col" style="background:#FB8;height:200px;">ブロックA</div>
+  <div class="col" style="background:#FD9;height:200px;">ブロックB</div>
+</div>
+<div class="row">
+  <div class="col" style="background:#79F;height:200px;">ブロックC</div>
+  <div class="col" style="background:#9BF;height:200px;">ブロックD</div>
+  <div class="col" style="background:#79F;height:200px;">ブロックE</div>
+  <div class="col" style="background:#9BF;height:200px;">ブロックF</div>
+</div>
+
+
+
+  <h1>Grid System</h1>
+  <div class="row">
+    <div class="col" style="background:#FB8;height:200px;">ブロックA</div>
+    <div class="col" style="background:#FD9;height:200px;">ブロックB</div>
+    <div class="col" style="background:#FB8;height:200px;">ブロックC</div>
+  </div>
+
+  <div class="alert alert-primary text-center" style="box-shadow: 7px 7px 10px #999;">
+    <h5>臨時休業のお知らせ</h5>
+    3月19日は店内改装のため
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+    </div>
+    <div class="row">
+      <div class="col-8">col-8</div>
+      <div class="col-4">col-4</div>
+    </div>
+  </div>
+  <img src="sample1.jpg" alt="bear" class="rounded-circle">
+
+</body>
+</html>

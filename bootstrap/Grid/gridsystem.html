@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>グリッドシステム</title>
+</head>
+
+<body>
+
+<div class="container">        
+  <!-- 理想通りにならない　いったん飛ばしてる　
+    全体を囲むコンテナ -->
+
+  <h1>Grid system（ネスト）</h1>
+  <div class="row">
+    <div class="col-9" style="border:solid 1px #000;height:650px;">
+      <div class="row">
+        <div class="col-12" style="background:#6D9;height:200px"><h2>新着情報</h2></div>
+      </div>
+      <div class="row">
+        <div class="col-6" style="background:#FB8;height:150px;">商品A</div>
+        <div class="col-3" style="background:#FD9;height:150px;">商品B</div>
+        <div class="col-3" style="background:#FB8;height:150px;">商品C</div>
+      </div>
+      <div class="row">
+        <div class="col" style="background:#79F;height:150px;">商品D</div>
+        <div class="col" style="background:#9BF;height:150px;">商品E</div>
+        <div class="col" style="background:#79F;height:150px;">商品F</div>
+      </div>
+    </div>
+    <div class="col-3" style="border:solid 1px #000;height:650px;">
+      <h2>Side Bar</h2>
+    </div>
+  </div>
+
+</div>        <!-- 全体を囲むコンテナ -->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

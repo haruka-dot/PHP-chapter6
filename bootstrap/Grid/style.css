@@ -1,0 +1,9 @@
+.col{
+  background: red;
+}
+.col:nth-child(2){
+  background: green;
+}
+.col:nth-child(3){
+  background: blue;
+}
